@@ -1,2 +1,2 @@
-# Nature-House-Traditional-and-Digital-Artist
+# Nature House - Traditional and Digital Artist
 Personal portfolio
