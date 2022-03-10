@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/avj6wjg.css">
+</head>
+
+<body>
+    <div id="splash">
+        <div id="close"><img src="Images/close-icon.png" style="width: 100%; height: auto;"></div>
+        <img id="splash-image">
+    </div>
+
+    <nav id="navigation-bar" class="flex-container">
+        <div class="bar">
+            <div id="dropdown-button" onclick="javascript:toggleMenu();"></div>
+            <a href="index.html"><img src="Images/logo.png" alt="Nature House" width="100"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="gallery clearfix">
+        <h1 class="underlined">Gallery</h1>
+        <div class="img-box"><img class="thumbnail" src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img class="thumbnail" src="Images/gallery2.jpg" alt="" width="1000" height="600">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="" width="770" height="695">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+        <div class="img-box"><img src="Images/gallery2.jpg" alt="">
+            <div class="text-box">
+                <p style="font-size: 2em; border-bottom: 1px solid white;">Head</p>
+                <p>Description of the image.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="info" class="flex-container">
+        <div><img src="Images/logo-reversed.png" width="100px;"></div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Lorem</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Lorem</a></li>
+        </ul>
+    </footer>
+    <script src="menu-animation.js"></script>
+    <script src="gallery.js"></script>
+
+    <!-- <script>
+        var splash = document.getElementById('splash');
+        var element = document.getElementsByClassName('img-box');
+        var splashImg = document.getElementById('splash-image');
+        var thumbnail;
+        for (var i = 0; i < element.length; i++) {
+            element[i].addEventListener("click", function() {
+                thumbnail = this.getElementsByTagName("IMG")[0];
+                splash.style.display = "flex";
+                splashImg.src = thumbnail.src;
+            });
+        }
+        var close = document.getElementById("close");
+        close.onclick = function() {
+            splash.style.display = "none"
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated-element');
+                }
+            })
+        });
+        observer.observe(document.getElementById("navigation-bar"));
+        var button = document.getElementsByClassName("dropdown-button")[0];
+        var menu = document.getElementById("navigation-bar").getElementsByTagName("ul")[0];
+        button = addEventListener("click", function() {
+            var state = window.getComputedStyle(menu).getPropertyValue("display");
+
+            if (state == "none") {
+                menu.style.display = "block";
+            }
+            if (state == "block") {
+                menu.style.display = "none";
+            }
+        });
+    </script> -->
+
+</body>
+
+</html>
