@@ -6,6 +6,10 @@
     body {
         margin: auto;
     }
+
+html {
+margin: auto;
+}
     
     .img-column {
         content: url("Images/me.jpg");
